@@ -1,0 +1,181 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e7e7e7;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    text-align: center; /* Centrer les éléments de la barre de navigation */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FFA500;
+}
+
+a {
+    text-decoration: none;
+}
+section {
+    text-align: center;
+    padding: 40px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+    color: #333;
+}
+
+h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+p, nav a{
+    font-size: 1.5em;
+}
+
+.project {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: transform 0.3s;
+    flex-direction: column;
+    flex-basis: 75%;
+}
+
+.project article {
+    margin-left: 20px;
+}
+
+.project h3{
+    font-size: 1.8em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.project article p{
+    text-align: center;
+    font-size: 1.5em;
+}
+.project-image {
+    flex: 1;
+    max-width: 30%;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.project-image img {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.project-details {
+    flex: 3;
+}
+
+.project h3 {
+    margin: 10px 0;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.project p {
+    color: #555;
+}
+
+.project-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.project-details li {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+#education {
+    background-color: #f9f9f9;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#education h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#education ul {
+    list-style: none;
+    padding: 0;
+}
+
+#education ul li {
+    margin: 20px 0;
+}
+
+#education h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+#education p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 1.2em;
+}
+
+footer a {
+    color: #FFA500;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #fff;
+}
