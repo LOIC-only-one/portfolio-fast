@@ -33,10 +33,12 @@ nav a {
     font-weight: 600;
     font-size: 1.2em;
     transition: color 0.3s;
+    transition : text-decoration-color 0.3s;
 }
 
 nav a:hover {
     color: #FFA500;
+    text-decoration-color: rgba(0, 0, 0, 1);
 }
 
 section {
@@ -175,4 +177,41 @@ footer a {
 
 footer a:hover {
     color: #fff;
+}
+
+
+
+
+/*Working Home*/
+
+.presentation-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.presentation-container section {
+    max-width: 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-left: 2%;
+    flex-basis: 42%;
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    background-color: #333;
+    color: white;
+}
+
+.presentation-container h2 {
+    color: white;
+}
+.presentation-container section:hover {
+    transform: translateY(-5px);
+    transform: scale(0.90);
+}
+
+.presentation-container img {
+    margin: 2%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
