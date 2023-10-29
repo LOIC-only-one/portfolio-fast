@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Votre Nom - Portfolio</title>
+    <title>Loïc Maurer - Portfolio</title>
 </head>
 <body>
     <header>
@@ -20,33 +20,27 @@
         </nav>
     </header>
     <section id="about">
-        <img src="assets/profil.jpg" alt="Votre Nom - Photo de profil" height="200px">
-        <h1>Maurer Loïc</h1>
-        <p>Etudiant en BUT R&T</p>
-        <p>🚀 Passionné par les réseaux et les télécommunications.</p>
-    </section>
-    <section id="projects">
-        <h2>Quelques Projets</h2>
-        <div class="project">
-            <a href="https://github.com/LOIC-only-one/MyTheOh">
-                <img src="assets/weather.png" alt="Projet 1" height="350px" id="gauche">
-                <article>
-                    <h3>MyTheOh - Python Project</h3>
-                    <p>Il s'agit d'un projet encadré, dans lequel j'ai du créer un générateur python traitant les données d'une station météo. Tous cela dans le but de tirer des graphiques. 🌟</p>
-                </article>
-            </a>
-        </div>
-        <div class="project">
-            <img src="assets/accounting-file.png" alt="Projet 2" height="350px" id="droite">
-            <article>
-                <a href="https://github.com/LOIC-only-one/ExoFTP"></a>
-                    <h3>ExoFTP</h3>
-                    <p>Un script Python incroyable pour explorer les fichiers et dossiers récursivements sur un service FTP avec facilité ! Nota le script est toujours en développement🚀</p>
-                </a>
-            </article>
+        <div class="about-container">
+            <img src="assets/profil.jpg" alt="Loïc Maurer - Photo de profil" class="profile-image">
+            <div class="about-text">
+                <h1>Maurer Loïc</h1>
+                <p>Étudiant en BUT R&T</p>
+                <p>🚀 Passionné par les réseaux et les télécommunications.</p>
             </div>
+        </div>
     </section>
-    <section id="education" class="project">
+    
+    <section id="presentation">
+        <h2>Présentation Personnelle</h2>
+        <p>Je m'appelle Loïc MAURER, j'ai actuellement 18 ans et je suis en 1ère année de BUT Réseau et Télécommunications à Colmar.</p>
+    </section>
+    
+    <section id="scolarite">
+        <h2>Ma Scolarité Pré et Études Supérieures</h2>
+        <p>Étant résidant à Sarre-Union, j'ai effectué la majeure partie de ma scolarité dans cette ville. En première année, j'ai décidé de rejoindre le LHB pour étudier la spécialité NSI.</p>
+    </section>
+    
+    <section id="education">
         <h2>Parcours Scolaire</h2>
         <ul>
             <li>
@@ -63,13 +57,53 @@
             </li>
             <li>
                 <h3>Études Supérieures</h3>
-                <p>BUT Réseau et télécommunications - Colmar</p>
+                <p>BUT Réseau et Télécommunications - Colmar</p>
             </li>
         </ul>
     </section>
+    
+    <section id="postbac">
+        <h2>Études Post Bac</h2>
+        <p>Comme annoncé précédemment, j'ai décidé de rejoindre l'IUT de Colmar pour étudier dans le domaine des réseaux et des télécommunications. J'ai immédiatement été attiré par cette formation dès que je l'ai découverte. C'est ainsi que j'ai intégré ce BUT en 2023, dont je suis maintenant étudiant en première année.</p>
+    </section>
+    
+    <section id="postbut">
+        <h2>Études Post-BUT</h2>
+    </section>
+
+
+
+    <section id="projects">
+        <h2>Quelques Projets</h2>
+        <article class="project">
+            <div class="project-details">
+                <h3>MyTheOh - Python Project</h3>
+                <p>Il s'agit d'un projet encadré, dans lequel j'ai dû créer un générateur python traitant les données d'une station météo. Tout cela dans le but de tirer des graphiques. 🌟</p>
+                <ul>
+                    <li>Langage: Python</li>
+                    <li>Année: 2022</li>
+                    <li>Statut: Complété</li>
+                </ul>
+            </div>
+            <img src="assets/weather.png" alt="Projet 1" class="project-image">
+        </article>
+        <article class="project">
+            <div class="project-details">
+                <h3>ExoFTP - Python Project</h3>
+                <p>Un script Python incroyable pour explorer les fichiers et dossiers récursivement sur un service FTP avec facilité ! Nota le script est toujours en développement 🚀                </p>
+                <ul>
+                    <li>Langage: Python</li>
+                    <li>Année: 2023</li>
+                    <li>Statut: En Cours</li>
+                </ul>
+            </div>
+            <img src="assets/accounting-file.png" alt="Projet 1" class="project-image">
+        </article>
+    </section>
+
     <footer>
         <h2>Contactez-moi</h2>
-        <p>Email : <a href="mailto:votre@email.com">loic.maurer@uha.fr</a></p>
+        <p>Email : <a href="mailto:votre@email.com">votre@email.com</a></p>
         <p>Téléphone : +36 24 29 XX XX 📞</p>
         <p>Connectez-vous avec moi sur <a href="https://linkedin.com/votrelinkedin" target="_blank">LinkedIn</a> 🔗</p>
     </footer>

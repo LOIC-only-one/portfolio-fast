@@ -2,7 +2,8 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e7e7e7;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
@@ -13,7 +14,7 @@ header {
 }
 
 nav {
-    text-align: center; /* Centrer les éléments de la barre de navigation */
+    text-align: center;
 }
 
 nav ul {
@@ -30,6 +31,7 @@ nav a {
     text-decoration: none;
     color: #fff;
     font-weight: 600;
+    font-size: 1.2em;
     transition: color 0.3s;
 }
 
@@ -37,12 +39,28 @@ nav a:hover {
     color: #FFA500;
 }
 
-a {
-    text-decoration: none;
-}
 section {
     text-align: center;
     padding: 40px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.about-text {
+    text-align: left;
+    margin-left: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 h1 {
@@ -56,63 +74,42 @@ h2 {
     color: #333;
 }
 
-p, nav a{
+p {
     font-size: 1.5em;
 }
 
 .project {
-    margin: 20px;
+    max-width: 75%;
+    margin: 0 auto;
+    margin-top: 2%;
     display: flex;
     align-items: center;
     background-color: #fff;
-    flex-wrap: wrap;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     padding: 20px;
     transition: transform 0.3s;
-    flex-direction: column;
-    flex-basis: 75%;
 }
 
-.project article {
-    margin-left: 20px;
-}
-
-.project h3{
-    font-size: 1.8em;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.project article p{
-    text-align: center;
-    font-size: 1.5em;
-}
 .project-image {
-    flex: 1;
-    max-width: 30%;
-    margin-right: 20px;
-    display: flex;
-    align-items: center;
-}
-
-.project-image img {
-    max-width: 100%;
-    max-height: 200px;
+    max-width: 300px;
     border-radius: 10px;
+    margin-left: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .project-details {
-    flex: 3;
+    text-align: left;
+    flex: 1;
 }
 
-.project h3 {
-    margin: 10px 0;
+.project-details h3 {
     font-size: 1.8em;
     color: #333;
+    margin: 10px 0;
 }
 
-.project p {
+.project-details p {
+    font-size: 1.5em;
     color: #555;
 }
 
@@ -132,7 +129,7 @@ p, nav a{
 
 #education {
     background-color: #f9f9f9;
-    padding: 10px;
+    padding: 40px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
