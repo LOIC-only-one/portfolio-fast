@@ -14,6 +14,7 @@ header {
 }
 
 nav {
+    background-attachment: fixed;
     text-align: center;
 }
 
@@ -32,13 +33,13 @@ nav a {
     color: #fff;
     font-weight: 600;
     font-size: 1.2em;
-    transition: color 0.3s;
-    transition : text-decoration-color 0.3s;
+    transition: 0.3s;
 }
 
 nav a:hover {
+    padding: 1%;
     color: #FFA500;
-    text-decoration-color: rgba(0, 0, 0, 1);
+    border: solid 1px #FFA500;
 }
 
 section {
@@ -192,7 +193,9 @@ footer a:hover {
 }
 
 .presentation-container section {
+    height: 500x;
     max-width: 50%;
+    margin-top: 2%;
     flex-grow: 1;
     flex-shrink: 1;
     margin-left: 2%;
@@ -214,4 +217,37 @@ footer a:hover {
 .presentation-container img {
     margin: 2%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/*Code de la page hobby.html*/
+
+.hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.child {
+    flex-basis: calc(20% - 20px);
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: relative; /*Applique un filtre seulement sur image */
+}
+
+figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    color: white;
+    text-align: center;
+    opacity: 0;
+    align-items: center;
+    transition: opacity 0.3s;
+}
+
+.child:hover figcaption {
+    opacity: 1;
 }
