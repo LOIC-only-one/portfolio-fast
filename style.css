@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -219,19 +223,25 @@ footer a:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/*Code de la page hobby.html*/
+
+.items-hobbies h2 {
+    text-align: center;
+}
 
 .hobbies {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .child {
     flex-basis: calc(20% - 20px);
     margin-bottom: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    position: relative; /*Applique un filtre seulement sur image */
+    position: relative;
+    border: 3px solid transparent; /* Ajoutez une bordure transparente */
+    transition: border 0.3s; /* Ajoutez une transition sur la bordure */
+    transition: padding 0.3s;
 }
 
 figcaption {
@@ -245,7 +255,12 @@ figcaption {
     text-align: center;
     opacity: 0;
     align-items: center;
-    transition: opacity 0.3s;
+    transition: 0.3s;
+}
+
+.child:hover {
+    padding: 1%;
+    border: 3px solid #FFA500; /* Ajoutez une bordure orange */
 }
 
 .child:hover figcaption {
