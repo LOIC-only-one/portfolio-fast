@@ -60,6 +60,7 @@ section {
 .profile-image {
     max-width: 200px;
     border-radius: 50%;
+    border: 5px solid #FFA500;
 }
 
 .about-text {
@@ -68,6 +69,10 @@ section {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+#changing-text {
+    color: #FFA500; /* Couleur orange pour {X} */
 }
 
 h1 {
@@ -135,9 +140,9 @@ p {
 }
 
 #education {
-    background-color: #f9f9f9;
+    background-color: #f4f4f4;
     padding: 40px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0.2, 0.2);
 }
 
 #education h2 {
