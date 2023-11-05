@@ -8,6 +8,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+
 }
 
 header {
@@ -15,7 +16,41 @@ header {
     color: #fff;
     text-align: center;
     padding: 20px 0;
+    background-image: url(assets/beautiful-shot-forest-with-tall-green-trees.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.9;
 }
+
+.title-section {
+    text-align: center;
+}
+
+.hover-me {
+    text-decoration: none;
+    background-color: transparent;
+    padding: 10px 50px; 
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer; 
+    transition: 0.3s;
+    border: #FFA500 solid 3px;
+    color: #f4f4f4;
+}
+
+.hover-me a {
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+.hover-me:hover {
+    color: #333;
+    background-color: #FFA500;
+    transform: scale(1.2);
+}
+
 
 nav {
     background-attachment: fixed;
@@ -52,6 +87,7 @@ section {
 }
 
 .about-container {
+    margin-bottom: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,25 +107,64 @@ section {
     text-overflow: ellipsis;
 }
 
-#changing-text {
-    color: #FFA500; /* Couleur orange pour {X} */
-}
-
 h1 {
     margin: 0;
     font-size: 3em;
     color: #333;
 }
 
-h2 {
+.about-text h1 {
     font-size: 2em;
-    color: #333;
+    color: #f4f4f4
 }
 
+
+
+.soft-skill {
+    text-align: center;
+    padding: 40px;
+}
+
+.soft-skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.soft-skill-card {
+    width: 300px;
+    border: 2px solid #FFA500;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    transition: transform 0.3s;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.soft-skill-card:hover {
+    transform: scale(1.05);
+}
+
+.soft-skill-card img {
+    max-width: 80px;
+}
+
+h2 {
+    color: #333;
+}
 p {
     font-size: 1.5em;
 }
 
+#projects {
+    background-color: #555;
+}
+
+#projetcts p, #projects h2 {
+    color: #f4f4f4;
+}
 .project {
     max-width: 75%;
     margin: 0 auto;
@@ -213,6 +288,7 @@ footer a:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     background-color: #333;
     color: white;
+    border-radius: 20px;
 }
 
 .presentation-container h2 {
@@ -244,8 +320,8 @@ footer a:hover {
     margin-bottom: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     position: relative;
-    border: 3px solid transparent; /* Ajoutez une bordure transparente */
-    transition: border 0.3s; /* Ajoutez une transition sur la bordure */
+    border: 3px solid transparent;
+    transition: border 0.3s;
     transition: padding 0.3s;
 }
 
@@ -265,7 +341,7 @@ figcaption {
 
 .child:hover {
     padding: 1%;
-    border: 3px solid #FFA500; /* Ajoutez une bordure orange */
+    border: 3px solid #FFA500;
 }
 
 .child:hover figcaption {
