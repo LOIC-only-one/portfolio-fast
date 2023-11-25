@@ -7,14 +7,14 @@
     <title>Loïc Maurer - Portfolio</title>
 </head>
 <body>
-    <header>
+    <header id="head1">
         <nav>
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="#about">À Propos</a></li>
+                <li id="active"><a href="index.html">Accueil</a></li>
+                <li><a href="#presentation">A Propos</a></li>
+                <li><a href="#education">Éducation</a></li>
                 <li><a href="#projects">Projets</a></li>
                 <li><a href="hobby.html">Hobbies</a></li>
-                <li><a href="#education">Éducation</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -29,32 +29,32 @@
                 </div>
             </div>
 
-            <button class="hover-me"><a href="#presentation"><p>Découvre moi</p></a></button>
+            <button class="hover-me"><a href="#presentation"><p>En savoir plus</p></a></button>
         </section>
     </header>
-    <section class="presentation-title"><h2 class="title-section">Une légere Présentation</h2></section>
+    <section class="presentation-title"><h2 id="presentation" class="title-section">Une légere Présentation</h2></section>
     <section class="presentation-container">
-        <section id="presentation">
-            <img src="assets/raspberry-pi.png" alt="" height="100px">
+        <section>
+            <img src="assets/raspberry-pi.png" alt="" height="75px">
             <h2>Présentation Personnelle</h2>
             <p>Je m'appelle Loïc MAURER, j'ai actuellement 18 ans et je suis en 1ère année de BUT Réseau et Télécommunications à Colmar.</p>
         </section>
         
         <section id="scolarite">
-            <img src="assets/books.png" alt="" height="100px">
+            <img src="assets/books.png" alt="" height="75px">
             <h2>Ma Scolarité Pré et Études Supérieures</h2>
             <p>Étant résidant à Sarre-Union, j'ai effectué la majeure partie de ma scolarité dans cette ville. En première année, j'ai décidé de rejoindre le LHB pour étudier la spécialité NSI. </p>
 
         </section>
 
         <section id="postbac">
-            <img src="assets/books.png" alt="" height="100px">
+            <img src="assets/books.png" alt="" height="75px">
             <h2>Études Post Bac</h2>
             <p>Comme annoncé précédemment, j'ai décidé de rejoindre l'IUT de Colmar pour étudier dans le domaine des réseaux et des télécommunications. J'ai immédiatement été attiré par cette formation dès que je l'ai découverte. C'est ainsi que j'ai intégré ce BUT en 2023, dont je suis maintenant étudiant en première année.</p>
         </section>
         
         <section id="postbut">
-            <img src="assets/books.png" alt="" height="100px">
+            <img src="assets/books.png" alt="" height="75px">
             <h2>Études Post-BUT</h2>
             <p>Etant en première année de BUT R&T, j'envisage en deuxieme année de réaliser ma formation en alterance. Je suis toujours à la recherche d'une entreprise. En fin de BUT je pourrai envisager de continer mes études dans un master par apprentissage.</p>
         </section>
@@ -62,7 +62,7 @@
 
     
     <section id="education">
-        <h2>Parcours Scolaire</h2>
+        <h2 class="title-section">Parcours Scolaire</h2>
         <ul>
             <li>
                 <h3>Collège</h3>
@@ -87,19 +87,19 @@
         <h2 class="title-section">Mes Soft Skills</h2>
         <div class="soft-skills-container">
             <div class="soft-skill-card">
-                <img src="assets/american-football.png" alt="Icône Communication">
+                <img src="assets/la-communication.png" alt="Icône Communication">
                 <h3>Communication</h3>
-                <p>Compétences en communication : Texte correspondant à la communication.</p>
+                <p>Durant mes années de lycée j'ai su adopter une méthode d'écoute actif !</p>
             </div>
             <div class="soft-skill-card">
-                <img src="leadership-icon.png" alt="Icône Leadership">
+                <img src="assets/leadership.png" alt="Icône Leadership">
                 <h3>Leadership</h3>
-                <p>Compétences en leadership : Texte correspondant au leadership.</p>
+                <p>Mes quelques projets m'ont permit de développer des compétences en gestion de projets.</p>
             </div>
             <div class="soft-skill-card">
-                <img src="creativity-icon.png" alt="Icône Créativité">
+                <img src="assets/la-creativite.png" alt="Icône Créativité">
                 <h3>Créativité</h3>
-                <p>Compétences en créativité : Texte correspondant à la créativité.</p>
+                <p>L'élaboration de vidéo sur des thémes informaiques ont su développer ma créativité.</p>
             </div>
         </div>
     </section>
@@ -110,35 +110,53 @@
         <h2 class="title-section">Quelques Projets</h2>
         <article class="project">
             <div class="project-details">
-                <h3>MyTheOh - Python Project</h3>
-                <p>Il s'agit d'un projet encadré, dans lequel j'ai dû créer un générateur python traitant les données d'une station météo. Tout cela dans le but de tirer des graphiques. 🌟</p>
-                <ul>
-                    <li>Langage: Python</li>
-                    <li>Année: 2022</li>
-                    <li>Statut: Complété</li>
-                </ul>
+                <a href="https://github.com/LOIC-only-one/MyTheOh">
+                    <h3>MyTheOh - Python Project</h3>
+                    <p>Il s'agit d'un projet encadré, dans lequel j'ai dû créer un générateur python traitant les données d'une station météo. Tout cela dans le but de tirer des graphiques. 🌟</p>
+                    <ul>
+                        <li>Langage: Python</li>
+                        <li>Année: 2022</li>
+                        <li>Statut: Complété</li>
+                    </ul>
+                </a>
             </div>
             <img src="assets/weather.png" alt="Projet 1" class="project-image">
         </article>
         <article class="project">
             <div class="project-details">
-                <h3>ExoFTP - Python Project</h3>
-                <p>Un script Python incroyable pour explorer les fichiers et dossiers récursivement sur un service FTP avec facilité ! Nota le script est toujours en développement 🚀                </p>
-                <ul>
-                    <li>Langage: Python</li>
-                    <li>Année: 2023</li>
-                    <li>Statut: En Cours</li>
-                </ul>
+                <a href="https://github.com/LOIC-only-one/ExoFTP">
+                    <h3>ExoFTP - Python Project</h3>
+                    <p>Un script Python incroyable pour explorer les fichiers et dossiers récursivement sur un service FTP avec facilité ! Nota le script est toujours en développement 🚀                </p>
+                    <ul>
+                        <li>Langage: Python</li>
+                        <li>Année: 2023</li>
+                        <li>Statut: En Cours</li>
+                    </ul>
+                </a>
             </div>
             <img src="assets/accounting-file.png" alt="Projet 1" class="project-image">
         </article>
     </section>
-
-    <footer id="contact">
-        <h2>Contactez-moi</h2>
-        <p>Email : <a href="mailto:votre@email.com">loic.maurer@uha.fr</a></p>
-        <p>Téléphone : +36 24 29 XX XX 📞</p>
-        <p>Connectez-vous avec moi sur <a href="https://www.linkedin.com/in/lo%C3%AFc-maurer-874135261/" target="_blank">LinkedIn</a> 🔗</p>
+    <footer>
+        <section class="footer-container">
+            <article class="footer-column">
+                <h3>Contactez-moi</h3>
+                <p>Email : <a href="mailto:loic.maurer@uha.fr">loic.maurer@uha.fr</a></p>
+                <p>Téléphone : +336 24 29 XX XX 📞</p>
+                <p>Connectez-vous avec moi sur <a href="https://www.linkedin.com/in/lo%C3%AFc-maurer-874135261/" target="_blank">LinkedIn</a> 🔗</p>
+            </article>
+            <article class="footer-column">
+                <h3>Mes réseaux sociaux</h3>
+                <p><a href="https://github.com"><img src="assets/github-mark.png" alt="" height="40px"></a></p>
+                <p><a href="https://github.com"><img src="assets/discord-mark-black.png" alt="" height="40px"></a></p>
+                <p><a href="https://github.com"><img src="assets/pngegg.png" alt="" height="40px"></a></p>
+            </article>
+            <article class="footer-column">
+                <h3>D'autres projets</h3>
+                <p>WebSecurityEmpire - Sécurité Web</p>
+                <p>LocalLink - Réseau Social Local</p>
+            </article>
+        </section>
     </footer>
 </body>
 </html>

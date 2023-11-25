@@ -7,22 +7,33 @@
     <title>Loïc Maurer - Hobbies</title>
 </head>
 <body>
-    <header>
+    <header id="head2">
         <nav>
             <ul>
+                <li id="active"><a href="hobby.html">Hobbies</a></li>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="index.html">À Propos</a></li>
                 <li><a href="index.html">Projets</a></li>
-                <li><a href="hobby.html">Hobbies</a></li>
-                <li><a href="index.html">Éducation</a></li>
+                <li><a href="#cybersecurity">Conclusion</a></li>
                 <li><a href="index.html">Contact</a></li>
+                
             </ul>
         </nav>
+        <section id="about">
+            <div class="about-container">
+                <img src="assets/profil.jpg" alt="Loïc Maurer - Photo de profil" class="profile-image">
+                <div class="about-text">
+                    <h1>Maurer Loïc</h1>
+                    <p>Étudiant en BUT R&T</p>
+                    <p>🚀 Passionné par  <span id="changing-text">les réseaux et les télécommunications</span></p>
+                </div>
+            </div>
 
-        <a href="#items-hobbies">Quelques Passions...</a>
+            <button class="hover-me"><a href="#hobbies"><p>Quelques Passions...</p></a></button>
+        </section>
     </header>
     <section class="items-hobbies">
-        <h2>Quelques Occupations ...</h2>
+        <h2 id="hobbies">Quelques Occupations ...</h2>
         <section id="hobbies" class="hobbies">
             <article class="child">
                 <figure class="image-container">
@@ -30,7 +41,7 @@
                     <figcaption>
                         <h3>Un passioné d'histoire</h3>
                         <h4>Je suis passioné d'histoire depuis ma plus tendre enfance !</h4>
-                        <h4>“L’histoire est la mémoire du monde.”</h4>
+                        <h4>“L'histoire est la mémoire du monde.”</h4>
                     </figcaption>
                 </figure>
             </article>
@@ -68,9 +79,9 @@
                 <figure class="image-container">
                     <img src="assets/american-football.png" alt="" height="200px">
                     <figcaption>
-                        <h3>Développer comme un ninja !</h3>
-                        <h4>Entrainer mon esprit créatif.</h4>
-                        <h4>“N'importe quel idiot peut écrire du code qu'un ordinateur peut comprendre. Les bons programmeurs écrivent du code que les humains peuvent comprendre.”</h4>
+                        <h3>Faire du sport !</h3>
+                        <h4>Je faisais du basket en club, j'ai appris à developper un esprit de groupe !</h4>
+                        <h4>“Je ne peux pas accepter de ne pas essayer. J'ai raté 9000 tirs dans ma carrière.”</h4>
                     </figcaption>
                 </figure>
             </article>
@@ -78,21 +89,53 @@
                 <figure class="image-container">
                     <img src="assets/music.png" alt="" height="200px">
                     <figcaption>
-                        <h3>Développer comme un ninja !</h3>
-                        <h4>Entrainer mon esprit créatif.</h4>
-                        <h4>“N'importe quel idiot peut écrire du code qu'un ordinateur peut comprendre. Les bons programmeurs écrivent du code que les humains peuvent comprendre.”</h4>
+                        <h3>Jouer de la guitare !</h3>
+                        <h4>Je joue de la guitare depuis mes 13. J'ai pu apprendre et développer mes goûts musicaux !</h4>
+                        <h4>“La musique, c'est du bruit qui pense.”</h4>
                     </figcaption>
                 </figure>
             </article>
         </section>
     </section>
     
+    <section id="cybersecurity" class="portfolio-section">
+        <h2 class="subsection-title">Active Participation in CTFs</h2>
+        <section class="subsection">
+            <figure class="subsection-image">
+                <img src="assets/hackthebox.jpg" alt="hackthebox">
+            </figure>
+            <p class="subsection-description">CTFs, or Capture The Flags, are more than just challenges; they're important in my cybersecurity journey. Many hours have been spent solving puzzles, exploiting vulnerabilities and practicing ethical hacking. Participating in platforms such as Hack The Box allows me to do complex challenges, learn and keep up to date with cybersecurity trends.</p>
+        </section>
+        
+        <h2 class="subsection-title">Participation and Presentations</h2>
+        <section class="subsection">
+            <figure class="subsection-image">
+                <img src="assets/anssi.png" alt="anssi">
+            </figure>
+            <p class="subsection-description">Beyond the CTFs, I have the privilege of attending presentations and events related to cybersecurity. These experiences are an opportunity to share ideas, learn from other professionals and enrich my skills. Topics range from exploiting vulnerabilities to advanced cybersecurity concepts, which testifies to my commitment to this field.</p>
+        </section>
+    </section>
     
-    <footer id="contact">
-        <h2>Contactez-moi</h2>
-        <p>Email : <a href="mailto:votre@email.com">loic.maurer@uha.fr</a></p>
-        <p>Téléphone : +36 24 29 XX XX 📞</p>
-        <p>Connectez-vous avec moi sur <a href="https://linkedin.com/votrelinkedin" target="_blank">LinkedIn</a> 🔗</p>
+    <footer>
+        <section class="footer-container">
+            <article class="footer-column">
+                <h3>Contactez-moi</h3>
+                <p>Email : <a href="mailto:loic.maurer@uha.fr">loic.maurer@uha.fr</a></p>
+                <p>Téléphone : +336 24 29 XX XX 📞</p>
+                <p>Connectez-vous avec moi sur <a href="https://www.linkedin.com/in/lo%C3%AFc-maurer-874135261/" target="_blank">LinkedIn</a> 🔗</p>
+            </article>
+            <article class="footer-column">
+                <h3>Mes réseaux sociaux</h3>
+                <p><a href="https://github.com"><img src="assets/github-mark.png" alt="" height="40px"></a></p>
+                <p><a href="https://github.com"><img src="assets/discord-mark-black.png" alt="" height="40px"></a></p>
+                <p><a href="https://github.com"><img src="assets/pngegg.png" alt="" height="40px"></a></p>
+            </article>
+            <article class="footer-column">
+                <h3>D'autres projets</h3>
+                <p>WebSecurityEmpire - Sécurité Web</p>
+                <p>LocalLink - Réseau Social Local</p>
+            </article>
+        </section>
     </footer>
 </body>
 </html>

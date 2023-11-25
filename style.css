@@ -1,3 +1,4 @@
+/* Global Styles */
 html {
     scroll-behavior: smooth;
 }
@@ -8,10 +9,11 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-
 }
 
-header {
+/* Header Styles */
+
+#head1 {
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -22,36 +24,40 @@ header {
     background-size: cover;
     opacity: 0.9;
 }
-
-.title-section {
+#head2 {
+    background-color: #333;
+    color: #fff;
     text-align: center;
+    padding: 20px 0;
+    background-image: url(assets/beauti2.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.9;
 }
 
-.hover-me {
-    text-decoration: none;
-    background-color: transparent;
-    padding: 10px 50px; 
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2em;
-    cursor: pointer; 
-    transition: 0.3s;
-    border: #FFA500 solid 3px;
-    color: #f4f4f4;
+/* Heading Styles */
+h1, h2 {
+    margin: 0;
 }
 
-.hover-me a {
-    text-decoration: none;
-    color: #f4f4f4;
-}
-
-.hover-me:hover {
+h1 {
+    font-size: 3em;
     color: #333;
-    background-color: #FFA500;
-    transform: scale(1.2);
 }
 
+h2 {
+    color: #333;
+    font-size: 1.7em;
+}
 
+/* Paragraph Styles */
+p {
+    font-size: 1.3em;
+    line-height: 1.6;
+}
+
+/* Navigation Styles */
 nav {
     background-attachment: fixed;
     text-align: center;
@@ -81,11 +87,13 @@ nav a:hover {
     border: solid 1px #FFA500;
 }
 
+/* Section Styles */
 section {
     text-align: center;
     padding: 40px;
 }
 
+/* About Section Styles */
 .about-container {
     margin-bottom: 10%;
     display: flex;
@@ -107,19 +115,47 @@ section {
     text-overflow: ellipsis;
 }
 
-h1 {
-    margin: 0;
-    font-size: 3em;
-    color: #333;
-}
-
 .about-text h1 {
     font-size: 2em;
     color: #f4f4f4
 }
 
+/* Button Styles */
+.hover-me {
+    text-decoration: none;
+    background-color: transparent;
+    padding: 5px 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: 0.3s;
+    border: #FFA500 solid 3px;
+    color: #f4f4f4;
+}
 
+.hover-me a {
+    text-decoration: none;
+    color: #f4f4f4;
+}
 
+.hover-me:hover {
+    color: #333;
+    background-color: #FFA500;
+    transform: scale(1.1);
+}
+
+#hobby-button {
+    margin-top: 10%;
+}
+
+/* Active Link Styles */
+#active a {
+    color: #FFA500;
+    text-decoration: underline;
+}
+
+/* Soft Skill Section Styles */
 .soft-skill {
     text-align: center;
     padding: 40px;
@@ -151,13 +187,7 @@ h1 {
     max-width: 80px;
 }
 
-h2 {
-    color: #333;
-}
-p {
-    font-size: 1.5em;
-}
-
+/* Project Section Styles */
 #projects {
     background-color: #555;
 }
@@ -165,6 +195,7 @@ p {
 #projetcts p, #projects h2 {
     color: #f4f4f4;
 }
+
 .project {
     max-width: 75%;
     margin: 0 auto;
@@ -175,6 +206,10 @@ p {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     padding: 20px;
     transition: transform 0.3s;
+}
+
+.project a {
+    text-decoration: none;
 }
 
 .project-image {
@@ -214,15 +249,14 @@ p {
     transform: translateY(-5px);
 }
 
+/* Education Section Styles */
 #education {
     background-color: #f4f4f4;
     padding: 40px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0.2, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2, 0.2);
 }
 
 #education h2 {
-    font-size: 2em;
-    color: #333;
     margin-bottom: 20px;
 }
 
@@ -245,12 +279,12 @@ p {
     color: #555;
 }
 
+/* Footer Styles */
 footer {
-    text-align: center;
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
-    font-size: 1.2em;
+    padding: 20px;
+    text-align: center;
 }
 
 footer a {
@@ -260,15 +294,22 @@ footer a {
     transition: color 0.3s;
 }
 
-footer a:hover {
-    color: #fff;
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 10px;
+}
+.footer-column {
+    margin: 10px 0;
 }
 
 
-
-
-/*Working Home*/
-
+/* Working Home Section Styles */
 .presentation-container {
     display: flex;
     align-items: center;
@@ -277,8 +318,8 @@ footer a:hover {
 }
 
 .presentation-container section {
-    height: 500x;
-    max-width: 50%;
+    height: 250px;
+    max-width: 40%;
     margin-top: 2%;
     flex-grow: 1;
     flex-shrink: 1;
@@ -294,6 +335,11 @@ footer a:hover {
 .presentation-container h2 {
     color: white;
 }
+
+.presentation-container p {
+    font-size: 1rem;
+}
+
 .presentation-container section:hover {
     transform: translateY(-5px);
     transform: scale(0.90);
@@ -303,7 +349,6 @@ footer a:hover {
     margin: 2%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
-
 
 .items-hobbies h2 {
     text-align: center;
@@ -331,7 +376,7 @@ figcaption {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6); 
+    background: rgba(0, 0, 0, 0.6);
     color: white;
     text-align: center;
     opacity: 0;
@@ -346,4 +391,69 @@ figcaption {
 
 .child:hover figcaption {
     opacity: 1;
+}
+
+#cybersecurity {
+    text-align: center;
+}
+
+#cybersecurity .section-title {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#cybersecurity article,
+#cybersecurity .subsection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+#cybersecurity .section-image,
+#cybersecurity .subsection-image {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 30%;
+    margin-right: 20px;
+}
+
+#cybersecurity .section-image img,
+#cybersecurity .subsection-image img {
+    width: 100%;
+}
+
+#cybersecurity .section-description,
+#cybersecurity .subsection-description {
+    color: #555;
+    font-size: 1.3em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1080px) {
+    .presentation-container {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .presentation-container section {
+        height: 270px;
+        max-width: 40%;
+        margin-top: 2%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        margin-left: 2%;
+        flex-basis: 42%;
+        transition: 0.3s;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        background-color: #333;
+        color: white;
+        border-radius: 20px;
+    }
 }
