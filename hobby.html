@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Loïc Maurer - Hobbies</title>
+    <link rel="icon" href="assets/profil.jpg"/>
 </head>
 <body>
-    <header id="head2">
+    <header id="head1">
         <nav>
             <ul>
                 <li id="active"><a href="hobby.html">Hobbies</a></li>
@@ -19,6 +20,13 @@
                 
             </ul>
         </nav>
+
+        <div class="video-container">
+            <video autoplay muted loop id="background-video">
+                <source src="https://vitalrecordscontrol.b-cdn.net/wp-content/uploads/2021/09/Hero-Small-Green.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
         <section id="about">
             <div class="about-container">
                 <img src="assets/profil.jpg" alt="Loïc Maurer - Photo de profil" class="profile-image">
@@ -33,14 +41,14 @@
         </section>
     </header>
     <section class="items-hobbies">
-        <h2 id="hobbies">Quelques Occupations ...</h2>
+        <h2 id="hobbies" class="title-section">Quelques Occupations ...</h2>
         <section id="hobbies" class="hobbies">
             <article class="child">
                 <figure class="image-container">
                     <img src="assets/search-history.png" alt="" height="200px">
                     <figcaption>
-                        <h3>Un passioné d'histoire</h3>
-                        <h4>Je suis passioné d'histoire depuis ma plus tendre enfance !</h4>
+                        <h3>Un passionné d'histoire</h3>
+                        <h4>Je suis passionné d'histoire depuis ma plus tendre enfance !</h4>
                         <h4>“L'histoire est la mémoire du monde.”</h4>
                     </figcaption>
                 </figure>
@@ -49,9 +57,9 @@
                 <figure class="image-container">
                     <img src="assets/two-factor-authentication.png" alt="" height="200px">
                     <figcaption>
-                        <h3>Un passioné de cybersécurité</h3>
-                        <h4>Je suis passioné de cybersécurité depuis déja quelques années !</h4>
-                        <h4>“La seule façon de gagner la cyberguerre, c'est de l'éviter”</h4>
+                        <h3>Un passionné de cybersécurité</h3>
+                        <h4>Je suis passionné de cybersécurité depuis déja quelques années !</h4>
+                        <h4>“La seule façon de gagner la cyberguerre, c'est de l'éviter” - Mikko Hyppönen</h4>
                     </figcaption>
                 </figure>
             </article>
@@ -60,8 +68,8 @@
                     <img src="assets/travel-book.png" alt="" height="200px">
                     <figcaption>
                         <h3>Un adepte du changement</h3>
-                        <h4>J'adore découvrir de nouveaux paysages !</h4>
-                        <h4>“Voyager enseigne la tolérance !”</h4>
+                        <h4>J'adore découvrir de nouveaux paysages, et voyager !</h4>
+                        <h4>“Voyager enseigne la tolérance !” - Benjamin Disraeli</h4>
                     </figcaption>
                 </figure>
             </article>
@@ -70,8 +78,8 @@
                     <img src="assets/visual-studio-code.png" alt="" height="200px">
                     <figcaption>
                         <h3>Développer comme un ninja !</h3>
-                        <h4>Entrainer mon esprit créatif.</h4>
-                        <h4>“N'importe quel idiot peut écrire du code qu'un ordinateur peut comprendre. Les bons programmeurs écrivent du code que les humains peuvent comprendre.”</h4>
+                        <h4>Entrainer mon esprit créatif et logique..</h4>
+                        <h4>"Un langage de programmation n'est qu'un moyen de communication avec un ordinateur, écrit pour exprimer des algorithmes." - Alan Perlis</h4>
                     </figcaption>
                 </figure>
             </article>
@@ -80,8 +88,8 @@
                     <img src="assets/american-football.png" alt="" height="200px">
                     <figcaption>
                         <h3>Faire du sport !</h3>
-                        <h4>Je faisais du basket en club, j'ai appris à developper un esprit de groupe !</h4>
-                        <h4>“Je ne peux pas accepter de ne pas essayer. J'ai raté 9000 tirs dans ma carrière.”</h4>
+                        <h4>Je faisais du basket en club, j'ai appris à développer un esprit de groupe !</h4>
+                        <h4>"Je ne peux pas accepter de ne pas essayer. J'ai raté 9000 tirs dans ma carrière." - Michael Jordan</h4>
                     </figcaption>
                 </figure>
             </article>
@@ -90,16 +98,33 @@
                     <img src="assets/music.png" alt="" height="200px">
                     <figcaption>
                         <h3>Jouer de la guitare !</h3>
-                        <h4>Je joue de la guitare depuis mes 13. J'ai pu apprendre et développer mes goûts musicaux !</h4>
-                        <h4>“La musique, c'est du bruit qui pense.”</h4>
+                        <h4>Je joue de la guitare depuis mes 13 ans. J'ai pu apprendre et développer mes goûts musicaux !</h4>
+                        <h4>“La musique, c'est du bruit qui pense.” - Victor Hugo</h4>
                     </figcaption>
                 </figure>
             </article>
         </section>
     </section>
-    
+    <h2 class="title-section">My Favourite Music Teams</h2>
+    <section class="accordeon-section">
+        <div class="container-accordeon">
+            <details class="accordeon-child">
+                <summary>Metallica</summary>
+                <p>Metallica is an American heavy metal band known for hits like "Enter Sandman" and "Master of Puppets"</p>
+            </details>
+            <details class="accordeon-child">
+                <summary>Rammstein</summary>
+                <p>Rammstein is a German Neue Deutsche Härte band with iconic tracks such as "Du Hast" and "Sonne."</p>
+            </details>
+            <details class="accordeon-child">
+                <summary>Red Hot Chili Peppers</summary>
+                <p>Red Hot Chili Peppers, an American rock band, is famous for songs like "Californication" and "Under the Bridge."</p>
+            </details>
+        </div>
+    </section>
+
     <section id="cybersecurity" class="portfolio-section">
-        <h2 class="subsection-title">Active Participation in CTFs</h2>
+        <h2 class="subsection-title title-section">Active Participation in CTFs</h2>
         <section class="subsection">
             <figure class="subsection-image">
                 <img src="assets/hackthebox.jpg" alt="hackthebox">
@@ -107,8 +132,8 @@
             <p class="subsection-description">CTFs, or Capture The Flags, are more than just challenges; they're important in my cybersecurity journey. Many hours have been spent solving puzzles, exploiting vulnerabilities and practicing ethical hacking. Participating in platforms such as Hack The Box allows me to do complex challenges, learn and keep up to date with cybersecurity trends.</p>
         </section>
         
-        <h2 class="subsection-title">Participation and Presentations</h2>
-        <section class="subsection">
+        <h2 class="subsection-title title-section">Participation and Presentations</h2>
+        <section class="subsection" id="left-flex-box">
             <figure class="subsection-image">
                 <img src="assets/anssi.png" alt="anssi">
             </figure>
@@ -116,7 +141,7 @@
         </section>
     </section>
     
-    <footer>
+    <footer id="contact">
         <section class="footer-container">
             <article class="footer-column">
                 <h3>Contactez-moi</h3>
@@ -126,9 +151,9 @@
             </article>
             <article class="footer-column">
                 <h3>Mes réseaux sociaux</h3>
-                <p><a href="https://github.com"><img src="assets/github-mark.png" alt="" height="40px"></a></p>
-                <p><a href="https://github.com"><img src="assets/discord-mark-black.png" alt="" height="40px"></a></p>
-                <p><a href="https://github.com"><img src="assets/pngegg.png" alt="" height="40px"></a></p>
+                <p><a href="https://github.com/LOIC-only-one/"><img src="assets/github-color-svgrepo-com.svg" alt="github" height="40px"></a></p>
+                <p><a href="https://discord.com"><img src="assets/discord-v2-svgrepo-com.svg" alt="discord" height="40px"></a></p>
+                <p><a href="https://twitter.com"><img src="assets/twitter-svgrepo-com.svg" alt="twitter" height="40px"></a></p>
             </article>
             <article class="footer-column">
                 <h3>D'autres projets</h3>

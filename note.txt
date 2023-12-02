@@ -1,0 +1,10 @@
+Ajouter un bouton de traduction
+Changer le fond et mettre une vidéo                             ok
+Ajuster la barre de navigation et ajouter un padding            ok
+Diminiuer la taille du bouton                                   ok
+Ajouter des bordures aux items                                  no
+Revoir la palette de couleur                                    ok
+Changer le logo de github (gris-->noir)
+
+#413ADA
+#0B131B

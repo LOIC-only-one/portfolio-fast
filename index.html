@@ -5,118 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Loïc Maurer - Portfolio</title>
+    <link rel="icon" href="assets/profil.jpg"/>
 </head>
 <body>
     <header id="head1">
         <nav>
             <ul>
                 <li id="active"><a href="index.html">Accueil</a></li>
-                <li><a href="#presentation">A Propos</a></li>
+                <li><a href="#presentation">À Propos</a></li>
                 <li><a href="#education">Éducation</a></li>
                 <li><a href="#projects">Projets</a></li>
                 <li><a href="hobby.html">Hobbies</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-
+        <div class="video-container">
+            <video autoplay muted loop id="background-video">
+                <source src="https://vitalrecordscontrol.b-cdn.net/wp-content/uploads/2021/09/Hero-Small-Green.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
         <section id="about">
             <div class="about-container">
                 <img src="assets/profil.jpg" alt="Loïc Maurer - Photo de profil" class="profile-image">
                 <div class="about-text">
                     <h1>Maurer Loïc</h1>
                     <p>Étudiant en BUT R&T</p>
-                    <p>🚀 Passionné par  <span id="changing-text">les réseaux et les télécommunications</span></p>
+                    <p>🚀 Passionné par <span id="changing-text">les réseaux et les télécommunications</span></p>
                 </div>
             </div>
-
             <button class="hover-me"><a href="#presentation"><p>En savoir plus</p></a></button>
         </section>
     </header>
-    <section class="presentation-title"><h2 id="presentation" class="title-section">Une légere Présentation</h2></section>
+
+    <h2 id="presentation" class="title-section">Une Légère Présentation</h2>
     <section class="presentation-container">
-        <section>
-            <img src="assets/raspberry-pi.png" alt="" height="75px">
-            <h2>Présentation Personnelle</h2>
-            <p>Je m'appelle Loïc MAURER, j'ai actuellement 18 ans et je suis en 1ère année de BUT Réseau et Télécommunications à Colmar.</p>
-        </section>
-        
-        <section id="scolarite">
-            <img src="assets/books.png" alt="" height="75px">
-            <h2>Ma Scolarité Pré et Études Supérieures</h2>
-            <p>Étant résidant à Sarre-Union, j'ai effectué la majeure partie de ma scolarité dans cette ville. En première année, j'ai décidé de rejoindre le LHB pour étudier la spécialité NSI. </p>
+        <article id="scolarite">
+            <img src="assets/intelligent-positioning-svgrepo-com.svg" alt="" height="75px">
+            <h2>Ma Scolarité</h2>
+            <p>Résidant à Sarre-Union, j'ai effectué la majeure partie de ma scolarité dans cette ville. En première année, j'ai décidé de rejoindre le LHB pour étudier la spécialité NSI.</p>
+        </article>
 
-        </section>
-
-        <section id="postbac">
-            <img src="assets/books.png" alt="" height="75px">
+        <article id="postbac">
+            <img src="assets/port-detection-svgrepo-com.svg" alt="" height="75px">
             <h2>Études Post Bac</h2>
-            <p>Comme annoncé précédemment, j'ai décidé de rejoindre l'IUT de Colmar pour étudier dans le domaine des réseaux et des télécommunications. J'ai immédiatement été attiré par cette formation dès que je l'ai découverte. C'est ainsi que j'ai intégré ce BUT en 2023, dont je suis maintenant étudiant en première année.</p>
-        </section>
+            <p>J'ai décidé de rejoindre l'IUT de Colmar pour intégrer les réseaux et les télécommunications. En 2023, j'ai donc intégré cette formation !</p>
+        </article>
         
-        <section id="postbut">
-            <img src="assets/books.png" alt="" height="75px">
+        <article id="postbut">
+            <img src="assets/availability-svgrepo-com.svg" alt="" height="75px">
             <h2>Études Post-BUT</h2>
-            <p>Etant en première année de BUT R&T, j'envisage en deuxieme année de réaliser ma formation en alterance. Je suis toujours à la recherche d'une entreprise. En fin de BUT je pourrai envisager de continer mes études dans un master par apprentissage.</p>
-        </section>
+            <p>J'envisage en deuxième année de réaliser ma formation en alternance. En fin de BUT, je pourrai envisager de continuer mes études dans un master par apprentissage.</p>
+        </article>
     </section>
-
-    
+    <h2 class="title-section">Parcours Scolaire</h2>
     <section id="education">
-        <h2 class="title-section">Parcours Scolaire</h2>
-        <ul>
-            <li>
-                <h3>Collège</h3>
-                <p>Collège Pierre Claude - Sarre-Union</p>
-            </li>
-            <li>
-                <h3>Seconde</h3>
-                <p>Lycée George Imbert - Sarre-Union</p>
-            </li>
-            <li>
-                <h3>Première et Terminale</h3>
-                <p>Lycée du Haut Barr - Saverne</p>
-            </li>
-            <li>
-                <h3>Études Supérieures</h3>
-                <p>BUT Réseau et Télécommunications - Colmar</p>
-            </li>
-        </ul>
-    </section>
+        <iframe class="google-map" src="https://www.google.com/maps/d/embed?mid=1N7kQvzRIL7ypgkyBMj2nqVzTPM0rCek&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+        
+        <article class="info-maps">
+            <h3>Collège</h3>
+            <p>Collège Pierre Claude - Sarre-Union</p>
 
+            <h3>Seconde</h3>
+            <p>Lycée George Imbert - Sarre-Union</p>
+
+            <h3>Première et Terminale</h3>
+            <p>Lycée du Haut Barr - Saverne</p>
+
+            <h3>Études Supérieures</h3>
+            <p>BUT Réseau et Télécommunications - Colmar</p>
+        </article>
+    </section>
+    
     <section class="soft-skill">
         <h2 class="title-section">Mes Soft Skills</h2>
         <div class="soft-skills-container">
             <div class="soft-skill-card">
-                <img src="assets/la-communication.png" alt="Icône Communication">
+                <img src="assets/reminder-alert-svgrepo-com.svg" alt="Icône Communication">
                 <h3>Communication</h3>
-                <p>Durant mes années de lycée j'ai su adopter une méthode d'écoute actif !</p>
+                <p>Pendant mes années de lycée, j'ai su adopter une méthode d'écoute active !</p>
             </div>
             <div class="soft-skill-card">
-                <img src="assets/leadership.png" alt="Icône Leadership">
+                <img src="assets/personal-account-account-svgrepo-com.svg" alt="Icône Leadership">
                 <h3>Leadership</h3>
-                <p>Mes quelques projets m'ont permit de développer des compétences en gestion de projets.</p>
+                <p>Mes quelques projets m'ont permis de développer des compétences en gestion de projets.</p>
             </div>
             <div class="soft-skill-card">
-                <img src="assets/la-creativite.png" alt="Icône Créativité">
+                <img src="assets/pencil-revision-svgrepo-com.svg" alt="Icône Créativité">
                 <h3>Créativité</h3>
-                <p>L'élaboration de vidéo sur des thémes informaiques ont su développer ma créativité.</p>
+                <p>L'élaboration de vidéos sur des thèmes informatiques a su développer ma créativité.</p>
             </div>
         </div>
     </section>
-    
-    
     
     <section id="projects">
         <h2 class="title-section">Quelques Projets</h2>
         <article class="project">
             <div class="project-details">
                 <a href="https://github.com/LOIC-only-one/MyTheOh">
-                    <h3>MyTheOh - Python Project</h3>
-                    <p>Il s'agit d'un projet encadré, dans lequel j'ai dû créer un générateur python traitant les données d'une station météo. Tout cela dans le but de tirer des graphiques. 🌟</p>
+                    <h3>MyTheOh - Projet Python</h3>
+                    <p>Il s'agit d'un projet encadré dans lequel j'ai dû créer un générateur Python traitant les données d'une station météo. Tout cela dans le but de tirer des graphiques. 🌟</p>
                     <ul>
-                        <li>Langage: Python</li>
-                        <li>Année: 2022</li>
-                        <li>Statut: Complété</li>
+                        <li>Langage : Python</li>
+                        <li>Année : 2022</li>
+                        <li>Statut : Complété</li>
                     </ul>
                 </a>
             </div>
@@ -125,19 +117,19 @@
         <article class="project">
             <div class="project-details">
                 <a href="https://github.com/LOIC-only-one/ExoFTP">
-                    <h3>ExoFTP - Python Project</h3>
-                    <p>Un script Python incroyable pour explorer les fichiers et dossiers récursivement sur un service FTP avec facilité ! Nota le script est toujours en développement 🚀                </p>
+                    <h3>ExoFTP - Projet Python</h3>
+                    <p>Un script Python incroyable pour explorer les fichiers et dossiers récursivement sur un service FTP avec facilité ! Notez que le script est toujours en développement 🚀</p>
                     <ul>
-                        <li>Langage: Python</li>
-                        <li>Année: 2023</li>
-                        <li>Statut: En Cours</li>
+                        <li>Langage : Python</li>
+                        <li>Année : 2023</li>
+                        <li>Statut : En Cours</li>
                     </ul>
                 </a>
             </div>
             <img src="assets/accounting-file.png" alt="Projet 1" class="project-image">
         </article>
     </section>
-    <footer>
+    <footer id="contact">
         <section class="footer-container">
             <article class="footer-column">
                 <h3>Contactez-moi</h3>
@@ -147,9 +139,9 @@
             </article>
             <article class="footer-column">
                 <h3>Mes réseaux sociaux</h3>
-                <p><a href="https://github.com"><img src="assets/github-mark.png" alt="" height="40px"></a></p>
-                <p><a href="https://github.com"><img src="assets/discord-mark-black.png" alt="" height="40px"></a></p>
-                <p><a href="https://github.com"><img src="assets/pngegg.png" alt="" height="40px"></a></p>
+                <p><a href="https://github.com"><img src="assets/github-color-svgrepo-com.svg" alt="github" height="40px"></a></p>
+                <p><a href="https://discord.com"><img src="assets/discord-v2-svgrepo-com.svg" alt="discord" height="40px"></a></p>
+                <p><a href="https://twitter.com"><img src="assets/twitter-svgrepo-com.svg" alt="twitter" height="40px"></a></p>
             </article>
             <article class="footer-column">
                 <h3>D'autres projets</h3>

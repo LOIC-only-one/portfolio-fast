@@ -1,59 +1,72 @@
-/* Global Styles */
+/*Source
+https://www.w3schools.com/
+https://www.tooltester.com/fr/blog/portfolio-exemple/
+https://www.svgrepo.com/collection/lifestyle-tritone-icons/
+https://developer.mozilla.org/fr/docs/Web/CSS
+*/
+
+/* External Imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+/* Reset and Base Styles */
+:root {
+    --main-font: 'Arial', 'Helvetica', sans-serif;
+    --main-color: #222222;
+    --accent-color: #3498db;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: var(--main-font);
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 /* Header Styles */
-
 #head1 {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    background-image: url(assets/beautiful-shot-forest-with-tall-green-trees.jpg);
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    opacity: 0.9;
+    position: relative;
+    overflow: hidden;
 }
-#head2 {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    background-image: url(assets/beauti2.jpg);
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    opacity: 0.9;
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Heading Styles */
 h1, h2 {
     margin: 0;
+    color: white;
 }
 
 h1 {
     font-size: 3em;
-    color: #333;
 }
 
 h2 {
-    color: #333;
     font-size: 1.7em;
 }
 
 /* Paragraph Styles */
 p {
-    font-size: 1.3em;
+    font-size: 1.2em;
     line-height: 1.6;
 }
 
@@ -75,7 +88,7 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: white;
     font-weight: 600;
     font-size: 1.2em;
     transition: 0.3s;
@@ -83,8 +96,10 @@ nav a {
 
 nav a:hover {
     padding: 1%;
-    color: #FFA500;
-    border: solid 1px #FFA500;
+    color: var(--accent-color);
+    border: solid 2px;
+    border-image: linear-gradient(to right, var(--accent-color), #8e44ad);
+    border-image-slice: 1;
 }
 
 /* Section Styles */
@@ -93,18 +108,25 @@ section {
     padding: 40px;
 }
 
+.title-section {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
 /* About Section Styles */
 .about-container {
     margin-bottom: 10%;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .profile-image {
     max-width: 200px;
     border-radius: 50%;
-    border: 5px solid #FFA500;
+    overflow: hidden;
+    box-shadow: 0 0 0 5px inset, 0 0 0 5px #413ADA;
 }
 
 .about-text {
@@ -113,35 +135,32 @@ section {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-}
-
-.about-text h1 {
-    font-size: 2em;
-    color: #f4f4f4
+    color: white;
 }
 
 /* Button Styles */
 .hover-me {
     text-decoration: none;
     background-color: transparent;
-    padding: 5px 40px;
+    padding: 5px 50px;
     border: none;
     border-radius: 5px;
     font-size: 1.2em;
     cursor: pointer;
     transition: 0.3s;
-    border: #FFA500 solid 3px;
+    border: #413ADA solid 3px;
     color: #f4f4f4;
+    margin-bottom: 3.75%;
 }
 
 .hover-me a {
     text-decoration: none;
-    color: #f4f4f4;
+    color: white;
 }
 
 .hover-me:hover {
-    color: #333;
-    background-color: #FFA500;
+    color: white;
+    background-color: #413ADA;
     transform: scale(1.1);
 }
 
@@ -151,107 +170,52 @@ section {
 
 /* Active Link Styles */
 #active a {
-    color: #FFA500;
-    text-decoration: underline;
+    color: #413ADA;
 }
 
-/* Soft Skill Section Styles */
-.soft-skill {
-    text-align: center;
-    padding: 40px;
-}
-
-.soft-skills-container {
+/* Presentation Section Styles */
+.presentation-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.soft-skill-card {
-    width: 300px;
-    border: 2px solid #FFA500;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
-    transition: transform 0.3s;
-    text-align: center;
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-.soft-skill-card:hover {
-    transform: scale(1.05);
-}
-
-.soft-skill-card img {
-    max-width: 80px;
-}
-
-/* Project Section Styles */
-#projects {
-    background-color: #555;
-}
-
-#projetcts p, #projects h2 {
-    color: #f4f4f4;
-}
-
-.project {
-    max-width: 75%;
-    margin: 0 auto;
-    margin-top: 2%;
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    transition: transform 0.3s;
-}
-
-.project a {
-    text-decoration: none;
-}
-
-.project-image {
+.presentation-container article {
     max-width: 300px;
-    border-radius: 10px;
-    margin-left: 20px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    background-color: #333;
+    border-radius: 10px;
+    transition: transform 0.3s;
 }
 
-.project-details {
-    text-align: left;
-    flex: 1;
-}
-
-.project-details h3 {
-    font-size: 1.8em;
-    color: #333;
-    margin: 10px 0;
-}
-
-.project-details p {
-    font-size: 1.5em;
-    color: #555;
-}
-
-.project-details ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-.project-details li {
-    font-size: 1.2em;
-    color: #555;
-}
-
-.project:hover {
+.presentation-container article:hover {
     transform: translateY(-5px);
+}
+
+.presentation-container article img {
+    margin-bottom: 20px;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.presentation-container article h2 {
+    color: #3498db;
+}
+
+.presentation-container article p {
+    font-size: 1.2em;
+    color: white;
 }
 
 /* Education Section Styles */
 #education {
-    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #333;
     padding: 40px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2, 0.2);
 }
@@ -271,24 +235,115 @@ section {
 
 #education h3 {
     font-size: 1.5em;
-    color: #333;
+    color: #3498db;
 }
 
 #education p {
     font-size: 1.2em;
-    color: #555;
+    color: white;
+}
+
+/* Soft Skill Section Styles */
+.soft-skill {
+    text-align: center;
+    padding: 40px;
+    color: white;
+}
+
+.soft-skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.soft-skill-card {
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.soft-skill-card:hover {
+    transform: scale(1.05);
+}
+
+.soft-skill-card img {
+    max-width: 80px;
+}
+
+/* Project Section Styles */
+#projects {
+    background-color: #413ADA;
+}
+
+.project {
+    border: solid #333 3px;
+    border-radius: 10px;
+    max-width: 75%;
+    margin: 0 auto;
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.project a {
+    text-decoration: none;
+}
+
+.project-image {
+    max-width: 250px;
+    border-radius: 10px;
+    margin-left: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.project-details {
+    text-align: left;
+    flex: 1;
+}
+
+.project-details h3 {
+    font-size: 1.7em;
+    color: white;
+    margin: 10px 0;
+}
+
+.project-details p {
+    font-size: 1.2em;
+    color: white;
+}
+
+.project-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.project-details li {
+    font-size: 1.2em;
+    color: white;
+}
+
+.project:hover {
+    transform: translateY(-5px);
 }
 
 /* Footer Styles */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #0B131B;
+    color: white;
     padding: 20px;
     text-align: center;
 }
 
 footer a {
-    color: #FFA500;
+    color: #3498db;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s;
@@ -304,52 +359,9 @@ footer a {
     flex: 1;
     margin: 0 10px;
 }
-.footer-column {
-    margin: 10px 0;
-}
 
-
-/* Working Home Section Styles */
-.presentation-container {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.presentation-container section {
-    height: 250px;
-    max-width: 40%;
-    margin-top: 2%;
-    flex-grow: 1;
-    flex-shrink: 1;
-    margin-left: 2%;
-    flex-basis: 42%;
-    transition: 0.3s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    background-color: #333;
-    color: white;
-    border-radius: 20px;
-}
-
-.presentation-container h2 {
-    color: white;
-}
-
-.presentation-container p {
-    font-size: 1rem;
-}
-
-.presentation-container section:hover {
-    transform: translateY(-5px);
-    transform: scale(0.90);
-}
-
-.presentation-container img {
-    margin: 2%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
+/*Page Hobby.html Style*/
+/*Items Hobby Styles*/
 .items-hobbies h2 {
     text-align: center;
 }
@@ -386,19 +398,47 @@ figcaption {
 
 .child:hover {
     padding: 1%;
-    border: 3px solid #FFA500;
+    border: 3px solid #3498db;
 }
 
 .child:hover figcaption {
     opacity: 1;
 }
+/*Accordeon Section Style*/
+.accordeon-section {
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #333;
+}
 
+/* Accordeon Child Style */
+.accordeon-child {
+    margin-top: 10px;
+}
+
+.accordeon-child summary {
+    padding: 10px;
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.accordeon-child summary:hover {
+    background-color: #777;
+}
+
+/*Cybersecurity Section Style*/
 #cybersecurity {
     text-align: center;
 }
 
 #cybersecurity .section-title {
-    color: #333;
+    color: white;
     font-size: 2em;
     margin-bottom: 20px;
 }
@@ -410,6 +450,8 @@ figcaption {
     justify-content: center;
     text-align: left;
     margin-bottom: 40px;
+    background-color: #333;
+    border-radius: 10px;
 }
 
 #cybersecurity .section-image,
@@ -427,12 +469,17 @@ figcaption {
 
 #cybersecurity .section-description,
 #cybersecurity .subsection-description {
-    color: #555;
+    color: white;
     font-size: 1.3em;
     line-height: 1.6;
     margin-bottom: 30px;
 }
 
+#left-flex-box {
+    flex-direction: row-reverse;
+}
+
+/* Media Queries Adaptation Flexbox */
 @media (max-width: 1080px) {
     .presentation-container {
         display: flex;
